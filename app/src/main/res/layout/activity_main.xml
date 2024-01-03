@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_bg"
+        android:queryHint="Search Song"
+        android:baselineAligned="false"
+        android:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/asmrtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="ASMR"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/asmrtxt"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/asmrmusic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/asmrTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrmusic1"
+                    android:layout_marginTop="4dp"
+                    android:text="ASMR 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asmrmusicArtist1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrTitle1"
+                    android:layout_marginTop="2dp"
+                    android:text="Artist"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/asmrmusic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/asmrTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrmusic2"
+                    android:layout_marginTop="4dp"
+                    android:text="ASMR 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asmrmusicArtist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrTitle2"
+                    android:layout_marginTop="2dp"
+                    android:text="Artist"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/asmrmusic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/asmrTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrmusic3"
+                    android:layout_marginTop="4dp"
+                    android:text="ASMR 3"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asmrmusicArtist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrTitle3"
+                    android:layout_marginTop="2dp"
+                    android:text="Artist"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/asmrmusic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/asmrTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrmusic4"
+                    android:layout_marginTop="4dp"
+                    android:text="ASMR 4"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asmrmusicArtist4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/asmrTitle4"
+                    android:layout_marginTop="2dp"
+                    android:text="Artist"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/naturetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="NATURE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll1" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/naturetxt"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/music10"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/musicTitle10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music10"
+                    android:layout_marginTop="4dp"
+                    android:text="NATURE 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/musicArtist10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/musicTitle10"
+                    android:layout_marginTop="2dp"
+                    android:text="Artist"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/baseline_navigate_next_24" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll1"
+        app:srcCompat="@drawable/baseline_navigate_next_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
